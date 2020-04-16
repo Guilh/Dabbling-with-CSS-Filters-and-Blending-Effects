@@ -1,0 +1,136 @@
+/* VARIABLES ------------------------------------------------- */
+:root { 
+  /* Colors */
+  --white: #fff;
+  --color-primary: #278da4;
+  --color-primary-light: #278da488;
+  --color-secondary: #b13c69;
+  --color-accent: #f8f295;
+  --color-shade: #eee;
+
+  --color-text: #343434;
+  --color-bg: #3acec2;
+  --color-bg-light: #009fe1;
+  --gradient: var(--color-bg-light), 
+              var(--color-bg);
+
+  /* Fonts */
+  --font-stack-primary: 'Raleway', sans-serif;
+  --font-stack-secondary: 'Bree Serif', serif;
+
+  /* Layout */
+  --max-width: 1000px;
+  --gutter: 10px;
+}
+
+/* BASE ------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-stack-primary);
+  text-align: center;
+  margin: 0;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+h1,
+h2 {
+  font-family: var(--font-stack-secondary);
+}
+p {
+  margin-bottom: 1.25em;
+}
+
+/* HEADER & FOOTER ----------------------------------------- */
+
+header {
+  height: 340px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 3.4em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+header p {
+  color: var(--color-accent);
+  font-size: 1.25em;
+  margin: 0;
+}
+
+/* CONTAINERS ---------------------------------------------- */
+
+.inner {
+  padding: 0.5em 1em;
+}
+
+/* COMPONENTS ----------------------------------------------- */
+
+.main-nav {
+  margin-top: 1em;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 .65em;
+}
+
+.main-nav a {
+  color: var(--white);
+  font-size: .85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em;
+}
+
+.main-nav a:hover {
+  color: #ffffff88;
+}
+
+.img-mix { 
+  width: 480px;
+  display: none;
+  position: absolute;
+  top: -38px;
+  left: 60px;
+}
+
+/* MEDIA QUERIES ------------------------------------------------- */
+
+@media (min-width: 575px) {
+  body > header {
+    height: 400px;
+    background-position: 0 0, 0 55%;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+}
+ 
+@media (min-width: 992px) {
+  body > header {
+    height: 510px;
+  }
+  header h1 {
+    font-size: 4.8em;
+  }
+  .intro {
+    width: 45%;
+  }
+  .img-mix {
+    display: inline-block;  
+  }
+}

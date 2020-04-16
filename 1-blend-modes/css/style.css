@@ -1,0 +1,14 @@
+header {
+  background: linear-gradient( var(--gradient) ),
+              url('../img/bg.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.img-featured {
+  background-color: var(--color-accent);
+}
+.img-featured img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}

@@ -1,0 +1,78 @@
+/* VARIABLES ------------------------------------------------- */
+
+:root { 
+  /* Colors */
+  --white: #fff;
+  --color-primary: #278da4;
+  --color-primary-light: #278da488;
+  --color-secondary: #b13c69;
+  --color-accent: #f8f295;
+  --color-shade: #eee;
+
+  --color-text: #343434;
+  --color-bg: #3acec2;
+  --color-bg-light: #009fe1;
+  --gradient: var(--color-bg-light), 
+              var(--color-bg);
+
+  /* Fonts */
+  --font-stack-primary: 'Raleway', sans-serif;
+  --font-stack-secondary: 'Bree Serif', serif;
+}
+
+/* BASE ------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-stack-primary);
+  text-align: center;
+  margin: 0;
+  background: url('../img/space-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-family: var(--font-stack-secondary);
+}
+p {
+  margin-bottom: 1.25em;
+}
+
+/* HEADER ----------------------------------------- */
+
+header h1 {
+  color: #fff;
+  font-size: 4.8em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+header p {
+  color: var(--color-accent);
+  font-size: 1.25em;
+  margin: 0;
+}
+
+/* COMPONENTS ----------------------------------------------- */
+
+.btn {
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .75em 1.5em;
+  border-radius: .35em;
+  display: inline-block;
+}
+.btn-callout {
+  font-size: 1.1em;
+  background-color: var(--color-secondary);
+}

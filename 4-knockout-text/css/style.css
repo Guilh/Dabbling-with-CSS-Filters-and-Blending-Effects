@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 8em;
+  text-align: center;
+}
+
+.knockout {
+  font: 900 26em 'Work Sans', sans-serif;
+  background: url('../img/space-bg.jpg') no-repeat;
+  background-position-y: var(--bg-pos-y);
+  background-size: cover;
+}
+.knockout::before {
+  display: block;
+  content: 'SPACE';
+  background: #fff;
+  mix-blend-mode: lighten;
+}

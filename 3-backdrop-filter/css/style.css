@@ -1,0 +1,44 @@
+/* FILTERS */
+.filter {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  backdrop-filter: blur(5px) hue-rotate(65deg);
+}
+/* -------- */
+
+html, 
+body,
+.filter {
+  height: 100%;
+}
+h2 {
+  font-size: 2.35em;
+  margin: 0.3em 0;
+}
+header {
+  padding: 1em;
+  height: 500px;
+  position: relative;
+}
+.modal {
+  position: absolute;
+  max-width: 500px;
+  min-height: 450px;
+  top: 15%;
+  right: 25%;
+  bottom: 40%;
+  left: 25%;
+  padding: 1em;
+  margin: auto;
+  z-index: 20;
+  background-color: rgba(255,255,255, 0.85);
+  border-radius: 0.35em;
+  box-shadow: 0 3px 5px rgba(0,0,0, .35);
+}
+.modal p {
+  color: #222;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto 1.55em;
+}
